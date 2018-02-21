@@ -349,6 +349,7 @@ blockquote {
   display: inline;
   position: relative;
   overflow: hidden;
+  z-index: 100;
 }
 .underline:after {
   content: "";

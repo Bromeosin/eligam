@@ -104,21 +104,21 @@ input[type="button"].button-primary:focus {
     box-sizing: border-box;
     background-size: 200% 200%;
     background-image: linear-gradient(to top, $dark 50%, transparent 50%);
-    -webkit-transition: background-position 400ms, color 600ms ease, border-color 300ms ease;
-    -moz-transition: background-position 400ms ease;
-    -ms-transition: background-position 400ms ease;
-    -o-transition: background-position 400ms ease;
-    transition: background-position 400ms ease;
+    -webkit-transition:  400ms ease;
+    -moz-transition:  400ms ease;
+    -ms-transition:  400ms ease;
+    -o-transition:  400ms ease;
+    transition:  400ms ease;
 
     &:hover {
       background-image: linear-gradient(to top, $dark 51%, transparent 50%);
       background-position: 0 100%;
       color: white;
-      -webkit-transition: background-position 400ms ease;
-      -moz-transition: background-position 400ms ease;
-      -ms-transition: background-position 400ms ease;
-      -o-transition: background-position 400ms ease;
-      transition: background-position 400ms ease;
+      -webkit-transition:  400ms ease;
+      -moz-transition:  400ms ease;
+      -ms-transition:  400ms ease;
+      -o-transition:  400ms ease;
+      transition: 400ms ease;
       border-color: $dark;
     }
   }

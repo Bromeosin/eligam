@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- BASIC
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title><?php wp_title(); ?></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="assets/js/base.js"></script>
+  <script src="assets/js/modernizer.js"></script>
+
+</head>
+<body>
+
+  <!-- NAV
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="nav full-white">
+    <div class="container">
+    <a href="/"><img class="nav-logo" alt="eligam logo" title="eligam logo" src="assets/images/logo.png" id="logo" width="300" height="auto" ></a>
+      <ul class="navbar-list">
+        <li class="navbar-item ">
+          <a href="/homeware/" class="underline">homeware</a>
+          <div class="nav-dropdown">
+            <a href="#">kitchen</a>
+            <a href="#">living room</a>
+            <a href="#">bedroom</a>
+            <a href="#">bathroom</a>
+            <a href="#">furniture</a>
+            <a href="#">accessories</a>
+          </div>
+        </li>
+        <li class="navbar-item"><a href="/music/" class="underline">music</a></li>
+        <li class="navbar-item ">
+          <a href="/clothing/" class="underline">clothing</a>
+          <div class="nav-dropdown">
+            <a href="#">tops</a>
+            <a href="#">bottoms</a>
+            <a href="#">shoes</a>
+            <a href="#">outerwear</a>
+            <a href="#">accessories</a>
+          </div>
+        </li>
+        <li class="navbar-item ">
+          <a href="/lifestyle/" class="underline">lifestyle</a>
+          <div class="nav-dropdown">
+            <a href="#">sports</a>
+            <a href="#">headphones</a>
+            <a href="#">hi-fi</a>
+          </div>
+        </li>
+        <li class="navbar-item ">
+          <a href="/good-reads/" class="underline">good reads</a>
+          <div class="nav-dropdown">
+            <a href="#">design</a>
+            <a href="#">magazines</a>
+            <a href="#">novels</a>
+            <a href="#">food</a>
+          </div>
+        </li>
+        <li class="navbar-item"><a href="/about-us/" class="underline">about us</a></li>
+        <li class="navbar-button"><a href="/contact/" class="button fill-button">contact</a><li>
+      </ul>
+    </div>
+</div>
+<a href="#" id="navicon" class="closed">&#9776;</a>
+<nav id="main-nav">
+    <a href="#" class="current"><div>Home</div></a>
+    <a href="#"><div>About</div></a>
+    <a href="#"><div>Work</div></a>
+    <a href="#"><div>Blog</div></a>
+    <a href="#"><div>Contact</div></a>
+</nav>
+<div id="main-content">
+
+
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.fade').hide();
+  $('#navicon').click(function() {
+
+  if($('#navicon').hasClass('closed')) {
+      $('body').animate({left: "-250px"}, 400).css({"overflow":"hidden"});
+    $('#main-nav').animate({left: "0"}, 400);
+    $(this).removeClass('closed').addClass('open').html('x');
+    $('.fade').fadeIn();
+  }
+  else if($('#navicon').hasClass('open')) {
+     $('body').animate({left: "0"}, 400).css({"overflow":"scroll"});
+    $('#main-nav').animate({left: "-250px"}, 400);
+    $(this).removeClass('open').addClass('closed').html('&#9776;');
+    $('.fade').fadeOut();
+  }
+  });
+});
+</script>
+</body>
+</html>
