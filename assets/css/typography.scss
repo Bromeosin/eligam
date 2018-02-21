@@ -1,0 +1,376 @@
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+HTML is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px */
+
+html {
+
+  font-size: 62.5%;
+}
+
+body {
+
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 300;
+  color: $dark;
+}
+
+p {
+  font-family: 'Circular Std Book';
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  font-family: 'Circular Std Book';
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: $dark;
+  font-family: 'Circular Std';
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1 { font-size: 4.4rem; line-height: 1.2; font-weight: 700; margin-bottom: 2rem;}
+h2 { font-size: 3.2rem; line-height: 1.25; font-weight: 600; margin-bottom: 3.5rem;}
+h3 { font-size: 2.8rem; line-height: 1.3;  font-weight: 100; margin-bottom: 3.5rem;}
+h4 { font-size: 2.2rem; line-height: 1.35; font-weight: 600; margin-bottom: 2rem;}
+h5 { font-size: 1.8rem; line-height: 1.5;  font-weight: 100; margin-bottom: 1rem;}
+h6 { font-size: 1.5rem; line-height: 1.6; }
+
+/* Larger than phablet */
+@media (min-width: $mobile) {
+  h1 { font-size: 5.5rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; font-weight: 100;}
+  h4 { font-size: 2.6rem; }
+  h5 { font-size: 2.4rem; font-weight: 100; }
+  h6 { font-size: 1.5rem; }
+}
+
+p {
+  margin-top: 0;
+  letter-spacing: 0.02rem;
+  font-size: 0.85em;
+}
+
+blockquote {
+  font-size: 3.6rem;
+  font-weight: 100;
+  color: $blue-light;
+  font-style: italic;
+  line-height: 1.3;
+  border-left: solid 4px $cta;
+  padding-left: 4rem;
+  display: block;
+-webkit-margin-before: 0;
+-webkit-margin-after: 0;
+-webkit-margin-start: 0;
+-webkit-margin-end: 0;
+  margin-bottom: 2rem;
+}
+
+.masthead {
+  .small {
+      font-size: 1.4rem;
+      margin-bottom: 0;
+    }
+  h1 {
+    margin-bottom: 3rem;
+  }
+}
+
+.button {
+  font-size: 1.5rem;
+}
+
+.footer {
+  .small {
+      font-size: 1.4rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    color: $footer-text;
+  }
+
+  a {
+    color: $cta;
+  }
+}
+
+.link-cta {
+  font-size: 0.8em;
+}
+
+.light {
+  h1, h2, h4, p {
+    color: $blue-dark;
+  }
+  h3 {
+    color: $blue-medium;
+  }
+  .link-cta {
+      border-bottom: solid 2px $blue-light;
+      cursor: pointer;
+  }
+  a {
+    color: $blue-light;
+    text-decoration: none;
+  }
+}
+
+.dark {
+  h1, h2, h3, h4, h5, h6, p {
+    color: $off-white;
+  }
+  a {
+    color: $cta;
+  }
+  .link-cta {
+      border-bottom: solid 2px $cta;
+      cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.quote {
+  h3 {
+    margin-bottom: 0rem;
+  }
+  p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: $mobile) {
+  .quote {
+    h3 {
+      margin-bottom: 3.5rem;
+    }
+  }
+  .title-half {
+    p {
+      margin-bottom: 3.5rem;
+    }
+  .title {
+    text-align: left;
+  }
+  }
+  .client-list {
+    p {
+      margin-bottom: 3.5rem;
+    }
+  }
+}
+
+.title-half {
+  p {
+    margin-bottom: 1.5rem;
+  }
+  .title {
+    text-align: left;
+  }
+}
+
+.client-list {
+  p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.read-more {
+  transition: 0.5s;
+  margin-left: 0.3rem;
+}
+
+.link-cta:hover {
+  .read-more {
+    margin-left: 0.8rem;
+  }
+}
+
+.feature-list {
+  text-align: center;
+  img {
+    margin-bottom: 2rem;
+  }
+
+  h3, h4 {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-bottom: 6rem;
+  }
+}
+
+.services-list {
+
+  h3, h4, h5, h6, a, p {
+    text-align: center;
+    margin-bottom: 0;
+    color: $off-white;
+  }
+}
+
+.service-box {
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.full-image {
+  h1 {
+    font-size: 4rem;
+    float: left;
+    margin-left: 10%;
+    margin-top: 4%;
+    margin-bottom: 0rem;
+    position: absolute;
+  }
+}
+
+@media (max-width: 550px) {
+  .full-image {
+    h1 {
+      margin-left: 0rem;
+      margin-top: 7rem;
+    }
+  }
+}
+
+.half {
+  text-align: center;
+}
+
+.button {
+  color: $dark;
+
+}
+
+.form-box {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-family: 'Assistant', sans-serif;
+  color: $blue-dark;
+
+}
+
+.center {
+  text-align: center;
+}
+
+.green {
+
+  p, h1, h2, h3, h4, h5, h6, {
+  color: $off-white;
+  }
+  a {
+    color: $cta;
+  }
+  .link-cta {
+      border-bottom: solid 2px $cta;
+      cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.middle {
+  margin: auto;
+}
+
+.team {
+
+  h3, h6 {
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-top: 14rem;
+  }
+
+}
+
+.narrower {
+  li {
+    list-style: disc;
+    margin-left: 4rem;
+    font-size: 1.7rem;
+  }
+}
+
+.writing {
+  h3 {
+    margin-bottom: 0rem;
+  }
+}
+
+.home {
+  span {
+    margin-top: 70px;
+    float: right;
+    text-align: right;
+    position: relative;
+    z-index: 10;
+    width: 60%;
+  }
+}
+
+@media (max-width: 550px) {
+  .home {
+    span {
+      margin-top: 30px;
+    }
+  }
+}
+
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+.underline:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -6px;
+  background: $dark;
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}

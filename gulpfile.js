@@ -1,8 +1,9 @@
 var gulp = require('gulp');
 
-gulp.task('default', defaultTask);
+var sass = require('gulp-sass');
 
-function defaultTask(done) {
-
-	done();
-}
+gulp.task('default', function() {
+  gulp.src('assets/css/styles.scss')
+  .pipe(sass({style: 'expanded'}))
+  .pipe(gulp.dest(''))
+});
