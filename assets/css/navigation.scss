@@ -213,6 +213,8 @@ $button-width: 35px;
   }
 }
 
+::-webkit-scrollbar {display:none;}
+
 .overlay {
   position: fixed;
   background: #f8f8f8;

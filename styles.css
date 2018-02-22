@@ -1435,6 +1435,9 @@ a {
   .button_container span:hover span:hover:nth-of-type(3) {
     width: 100%; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 .overlay {
   position: fixed;
   background: #f8f8f8;
