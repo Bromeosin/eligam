@@ -23,6 +23,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="assets/js/base.js"></script>
+  <script src="assets/js/mobile-nav.js"></script>
   <script src="assets/js/modernizer.js"></script>
 
 </head>
@@ -77,40 +78,78 @@
         <li class="navbar-item"><a href="/about-us/" class="underline">about us</a></li>
         <li class="navbar-button"><a href="/contact/" class="button fill-button">contact</a><li>
       </ul>
+      <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+
+          <div class="dropdown">
+                <div onclick="homeDrop()" class="dropbtn homeware">
+                  homeware
+                  <div id="arrowHomeware" class="arrow arrowHomeware"><img src="assets/images/down-arrow.png" /></div>
+                </div>
+
+                <div id="homeware" class="dropdown-content home-drop">
+                  <a href="#">all</a>
+                  <a href="#">kitchen</a>
+                  <a href="#">living room</a>
+                  <a href="#">bedroom</a>
+                  <a href="#">bathroom</a>
+                  <a href="#">furniture</a>
+                  <a href="#">accessories</a>
+                </div>
+          </div>
+
+          <li><a href="/music/">music</a></li>
+
+          <div class="dropdown">
+                <div onclick="clothingDrop()" class="dropbtn clothing">
+                  clothing
+                  <div id="arrowClothing" class="arrow arrowClothing"><img src="assets/images/down-arrow.png" /></div>
+                </div>
+                <div id="clothing" class="dropdown-content clothing-drop">
+                  <a href="#">all</a>
+                  <a href="#">tops</a>
+                  <a href="#">bottoms</a>
+                  <a href="#">shoes</a>
+                  <a href="#">outerwear</a>
+                  <a href="#">accessories</a>
+                </div>
+          </div>
+
+          <div class="dropdown">
+                <div onclick="lifestyleDrop()" class="dropbtn lifestyle">
+                  lifestyle
+                  <div id="arrowLifestyle" class="arrow arrowLifestyle"><img src="assets/images/down-arrow.png" /></div>
+                </div>
+                <div id="lifestyle" class="dropdown-content lifestyle-drop">
+                  <a href="#">all</a>
+                  <a href="#">sports</a>
+                  <a href="#">headphones</a>
+                  <a href="#">hi-fi</a>
+                </div>
+          </div>
+
+          <div class="dropdown">
+                <div onclick="readsDrop()" class="dropbtn reads">
+                  good reads
+                  <div id="arrowReads" class="arrow arrowReads"><img src="assets/images/down-arrow.png" /></div>
+                </div>
+                <div id="reads" class="dropdown-content">
+                  <a href="#">all</a>
+                  <a href="#">design</a>
+                  <a href="#">novels</a>
+                  <a href="#">magazines</a>
+                  <a href="#">food</a>
+                </div>
+          </div>
+
+          <li><a href="/about-us/">about us</a></li>
+
+        </ul>
+      </nav>
+    </div>
     </div>
 </div>
-<a href="#" id="navicon" class="closed">&#9776;</a>
-<nav id="main-nav">
-    <a href="#" class="current"><div>Home</div></a>
-    <a href="#"><div>About</div></a>
-    <a href="#"><div>Work</div></a>
-    <a href="#"><div>Blog</div></a>
-    <a href="#"><div>Contact</div></a>
-</nav>
-<div id="main-content">
-
-
-</div>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>
-$(document).ready(function() {
-    $('.fade').hide();
-  $('#navicon').click(function() {
-
-  if($('#navicon').hasClass('closed')) {
-      $('body').animate({left: "-250px"}, 400).css({"overflow":"hidden"});
-    $('#main-nav').animate({left: "0"}, 400);
-    $(this).removeClass('closed').addClass('open').html('x');
-    $('.fade').fadeIn();
-  }
-  else if($('#navicon').hasClass('open')) {
-     $('body').animate({left: "0"}, 400).css({"overflow":"scroll"});
-    $('#main-nav').animate({left: "-250px"}, 400);
-    $(this).removeClass('open').addClass('closed').html('&#9776;');
-    $('.fade').fadeOut();
-  }
-  });
-});
-</script>
 </body>
 </html>
