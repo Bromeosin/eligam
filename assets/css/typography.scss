@@ -25,7 +25,7 @@ p {
 
 a {
   font-family: 'Circular Std Book';
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
   color: $dark;
-  font-family: 'Circular Std';
+  font-family: 'Playfair Display', serif;
   font-weight: bold;
   font-style: normal;
 }
@@ -49,18 +49,26 @@ h6 { font-size: 1.5rem; line-height: 1.6; }
 
 /* Larger than phablet */
 @media (min-width: $mobile) {
-  h1 { font-size: 5.5rem; }
-  h2 { font-size: 4.2rem; }
-  h3 { font-size: 3.6rem; font-weight: 100;}
-  h4 { font-size: 2.6rem; }
-  h5 { font-size: 2.4rem; font-weight: 100; }
-  h6 { font-size: 1.5rem; }
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2.5rem; }
+  h3 { font-size: 2rem; font-weight: 100;}
+  h4 { font-size: 1.9rem; }
+  h5 { font-size: 1.5rem; font-weight: 100; }
+  h6 { font-size: 1rem; }
 }
 
 p {
   margin-top: 0;
   letter-spacing: 0.02rem;
-  font-size: 0.85em;
+  font-size: 0.7em;
+  line-height: 2em;
+}
+
+a {
+  margin-top: 0;
+  letter-spacing: 0.02rem;
+  font-size: 0.7em;
+  line-height: 2em;
 }
 
 blockquote {
@@ -93,23 +101,6 @@ blockquote {
   font-size: 1.5rem;
 }
 
-.footer {
-  .small {
-      font-size: 1.4rem;
-  }
-
-  p {
-    margin-bottom: 1rem;
-  }
-
-  h1, h2, h3, h4, h5, h6, p {
-    color: $footer-text;
-  }
-
-  a {
-    color: $cta;
-  }
-}
 
 .link-cta {
   font-size: 0.8em;
@@ -127,7 +118,7 @@ blockquote {
       cursor: pointer;
   }
   a {
-    color: $blue-light;
+    color: $dark;
     text-decoration: none;
   }
 }
@@ -374,4 +365,12 @@ blockquote {
 
 a {
   text-decoration: none;
+}
+
+p:last-child {
+  margin-bottom: 0rem;
+}
+
+.strong {
+  font-weight: bold;
 }

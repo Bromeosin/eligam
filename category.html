@@ -14,6 +14,8 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -37,7 +39,7 @@
     <a href="/"><img class="nav-logo" alt="eligam logo" title="eligam logo" src="assets/images/logo.png" id="logo" width="300" height="auto" ></a>
       <ul class="navbar-list">
         <li class="navbar-item">
-          <a href="category.html" class="underline">homeware</a>
+          <a href="/homeware/" class="underline">homeware</a>
           <div class="nav-dropdown">
             <a href="#">kitchen</a>
             <a href="#">living room</a>
@@ -82,13 +84,11 @@
     <div class="overlay" id="overlay">
       <nav class="overlay-menu">
         <ul>
-
           <div class="dropdown">
                 <div onclick="homeDrop()" class="dropbtn homeware">
                   homeware
                   <div id="arrowHomeware" class="arrow arrowHomeware"><img src="assets/images/down-arrow.png" /></div>
                 </div>
-
                 <div id="homeware" class="dropdown-content home-drop">
                   <a href="#">all</a>
                   <a href="#">kitchen</a>
@@ -99,9 +99,9 @@
                   <a href="#">accessories</a>
                 </div>
           </div>
-
-          <li><a href="/music/">music</a></li>
-
+          <div class="dropdown">
+            <a class="dropbtn" href="/music/">music</a>
+          </div>
           <div class="dropdown">
                 <div onclick="clothingDrop()" class="dropbtn clothing">
                   clothing
@@ -116,7 +116,6 @@
                   <a href="#">accessories</a>
                 </div>
           </div>
-
           <div class="dropdown">
                 <div onclick="lifestyleDrop()" class="dropbtn lifestyle">
                   lifestyle
@@ -129,7 +128,6 @@
                   <a href="#">hi-fi</a>
                 </div>
           </div>
-
           <div class="dropdown">
                 <div onclick="readsDrop()" class="dropbtn reads">
                   good reads
@@ -143,8 +141,9 @@
                   <a href="#">food</a>
                 </div>
           </div>
-
-          <li><a href="/about-us/">about us</a></li>
+          <div class="dropdown">
+            <a class="dropbtn" href="/about-us/">about us</a>
+          </div>
 
         </ul>
       </nav>
@@ -154,9 +153,42 @@
 
 <!-- END HEADER -->
 
+<div class="row category flex" style="background-image:url('https://roohome.com/wp-content/uploads/2017/08/Scandinavian-interior-design-Doan-Nguyen.jpg');">
+  <div class="category-container">
+    <h1>T-Shirts.</h1>
+  </div>
+</div>
+
+
+<!-- SORT BY BAR -->
+
+<div class="row light sort-by">
+  <div class="container narrow">
+    <div class="trust-text">
+      <p>25% of profits direct to charity.</p>
+    </div>
+      <div class="sort-by-list">
+        <div class="dropdown">
+              <div onclick="sortDrop()" class="dropbtn sort">
+                sort by
+                <div id="arrowSort" class="arrow arrowSort"><img src="assets/images/down-arrow.png" /></div>
+              </div>
+              <div id="sort" class="dropdown-content">
+                <a href="#">latest</a>
+                <a href="#">price ascending</a>
+                <a href="#">price decending</a>
+              </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- END SORT BY BAR -->
+
 <!-- PRODUCT GRID LAYOUT -->
 
-<div class="row" style="margin-top: 4em; padding-bottom: 0em;">
+<div class="row grid">
   <div class="container narrow">
     <div class="product-grid">
       <div class="item-container">
@@ -218,21 +250,94 @@
           <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
         </div>
       </a>
+      <a href="#" class="item-container">
+        <div class="item-content">
+          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
+        </div>
+      </a>
+      <a href="#" class="item-container">
+        <div class="item-content">
+          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
+        </div>
+      </a>
+      <a href="#" class="item-container">
+        <div class="item-content">
+          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
+        </div>
+      </a>
+      <a href="#" class="item-container">
+        <div class="item-content">
+          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
+        </div>
+      </a>
+      <a href="#" class="item-container">
+        <div class="item-content">
+          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
+        </div>
+      </a>
+      <a href="#" class="item-container">
+        <div class="item-content">
+          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
+        </div>
+      </a>
+      <a href="#" class="item-container">
+        <div class="item-content">
+          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
+        </div>
+      </a>
+      <a href="#" class="item-container">
+        <div class="item-content">
+          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
+        </div>
+      </a>
+      <a href="#" class="item-container">
+        <div class="item-content">
+          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
+        </div>
+      </a>
+      <a href="#" class="item-container">
+        <div class="item-content">
+          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
+        </div>
+      </a>
     </div>
   </div>
 </div>
 
 <!-- END PRODUCT GRID LAYOUT -->
 
-<!-- CENTER TEXT -->
+<!-- PAGINATION -->
 
-<div class="row">
-  <div class="container narrow center">
-    <h2>De-Cluttering the Internet.</h2>
+<div class="row light sort-by">
+  <div class="container narrow">
+    <div class="previous-page">
+      <a href="#">< previous page</a>
+    </div>
+    <div class="next-page">
+      <a href="#">next page ></a>
+    </div>
   </div>
 </div>
 
-<!-- END CENTER TEXT -->
+
+<!-- END PAGINATION -->
+
+<!-- INTRODUCTION -->
+
+<div class="row introduction">
+  <div class="container narrow flex">
+    <div class="eight columns">
+      <h1>Hand Selected T-Shirts.</h1>
+      <p>Hello there you very pretty sausage roll I would really like to eat your face off that would be lovely! Hello there you very pretty sausage roll I would really like to eat your face off that would be lovely!</p>
+      <p>Hello there you very pretty sausage roll I would really like to eat your face off that would be lovely! Hello there you very pretty sausage roll I would really like to eat your face off that would be lovely!</p>
+    </div>
+    <div class="four columns introduction-image" style="background-image: url(https://st.hzcdn.com/simgs/a50169ab08b0593f_4-5521/scandinavian-living-room.jpg);">
+    </div>
+  </div>
+</div>
+
+
+<!-- END INTRODUCTION -->
 
 <!-- FOOTER -->
 
@@ -290,6 +395,7 @@
 </div>
 
 <!-- END FOOTER -->
+
 
 </body>
 </html>

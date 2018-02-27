@@ -2,7 +2,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .light {
-	background-color: $white;
+	background-color: #f8f8f8;
 }
 
 .grey {
@@ -58,16 +58,6 @@
   -moz-background-size: cover;
   -o-background-size: cover;
 	height: 100%;
-}
-
-.footer {
-	background-color: $blue-dark;
-}
-
-.footer-lower {
-	background-color: $blue-dark;
-	padding-top: 3.4rem;
-	padding-bottom: 1rem;
 }
 
 .services-list {

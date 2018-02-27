@@ -5,6 +5,7 @@
   opacity: 1;
   top: 0;
   position: fixed;
+  height: 4em;
 }
 
 .nav-logo {
@@ -14,6 +15,8 @@
   margin-top: 1.1%;
   z-index: 20;
   width: 140px;
+  max-width: 140px;
+  transition: 0.3s ease;
 }
 
 .navbar-list {
@@ -33,7 +36,7 @@
   padding-left: 2rem;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 1em;
   transition: 0.2s;
   font-weight: normal;
 
@@ -59,7 +62,7 @@
       display: block;
       margin-bottom: 0.2rem;
       font-weight: normal;
-      font-size: 0.85em;
+      font-size: 0.65em;
     }
   }
 
@@ -100,19 +103,10 @@
   font-family: 'Circular Std';
 }
 
-.footer-item {
-  display: inline;
-  float: left;
-  position: relative;
-  margin-right: 2rem;
-  cursor: pointer;
-  margin-bottom: 0;
-}
-
-@media (max-width: 550px) {
+@media (max-width: 980px) {
   .nav-logo {
     width: 40%;
-    margin-left: 30%;
+    margin-left: 38%;
     margin-top: 0.5rem;
   }
 
@@ -125,16 +119,22 @@
   .navbar-list {
     display: none;
   }
+  .nav {
+    height: 3em;
+  }
 }
 
-@media (min-width: 550px) {
+@media (min-width: 980px) {
   .button_container {
     display: none;
   }
 }
 
-
-
+@media (max-width: 550px) {
+  .nav-logo {
+    margin-left: 30%;
+  }
+}
 
 
 $button-height: 27px;
@@ -142,7 +142,7 @@ $button-width: 35px;
 
 .button_container {
   position: fixed;
-  margin-top: 6%;
+  margin-top: 20px;
   left: 20px;
   height: $button-height;
   width: $button-width;
@@ -316,7 +316,7 @@ $button-width: 35px;
 
 .dropbtn {
   opacity: 1;
-  font-weight: normal;
+  font-weight: 100;
   padding-left: 20px;
   width: calc(100% - 40px);
   padding-right: 20px;
@@ -324,7 +324,7 @@ $button-width: 35px;
   margin-bottom: 0rem;
   padding-bottom: 0.85rem;
   color: $dark;
-  font-size: 0.7em;
+  font-size: 0.55em;
 
 }
 
@@ -354,7 +354,7 @@ $button-width: 35px;
   padding: 10px 35px;
   text-decoration: none;
   display: block;
-  font-size: 0.6em;
+  font-size: 0.4em;
   font-weight: normal;
 }
 
@@ -364,14 +364,26 @@ $button-width: 35px;
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+@media (max-width: 1150px) {
+  .navbar-item {
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    .nav-dropdown {
+      padding-left: 1rem;
+      margin-left: -1rem;
+    }
+  }
+}
+
 /* ARROW STUFF */
 .arrow {
   float: right;
   transition: 0.3s;
 
   img {
-    width: 16px;
-    margin-top: 0.9rem;
+    width: 13px;
+    margin-top: 1rem;
     height: auto;
   }
 }

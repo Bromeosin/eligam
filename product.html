@@ -14,6 +14,8 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -37,7 +39,7 @@
     <a href="/"><img class="nav-logo" alt="eligam logo" title="eligam logo" src="assets/images/logo.png" id="logo" width="300" height="auto" ></a>
       <ul class="navbar-list">
         <li class="navbar-item">
-          <a href="category.html" class="underline">homeware</a>
+          <a href="/homeware/" class="underline">homeware</a>
           <div class="nav-dropdown">
             <a href="#">kitchen</a>
             <a href="#">living room</a>
@@ -82,13 +84,11 @@
     <div class="overlay" id="overlay">
       <nav class="overlay-menu">
         <ul>
-
           <div class="dropdown">
                 <div onclick="homeDrop()" class="dropbtn homeware">
                   homeware
                   <div id="arrowHomeware" class="arrow arrowHomeware"><img src="assets/images/down-arrow.png" /></div>
                 </div>
-
                 <div id="homeware" class="dropdown-content home-drop">
                   <a href="#">all</a>
                   <a href="#">kitchen</a>
@@ -99,9 +99,9 @@
                   <a href="#">accessories</a>
                 </div>
           </div>
-
-          <li><a href="/music/">music</a></li>
-
+          <div class="dropdown">
+            <a class="dropbtn" href="/music/">music</a>
+          </div>
           <div class="dropdown">
                 <div onclick="clothingDrop()" class="dropbtn clothing">
                   clothing
@@ -116,7 +116,6 @@
                   <a href="#">accessories</a>
                 </div>
           </div>
-
           <div class="dropdown">
                 <div onclick="lifestyleDrop()" class="dropbtn lifestyle">
                   lifestyle
@@ -129,7 +128,6 @@
                   <a href="#">hi-fi</a>
                 </div>
           </div>
-
           <div class="dropdown">
                 <div onclick="readsDrop()" class="dropbtn reads">
                   good reads
@@ -143,8 +141,9 @@
                   <a href="#">food</a>
                 </div>
           </div>
-
-          <li><a href="/about-us/">about us</a></li>
+          <div class="dropdown">
+            <a class="dropbtn" href="/about-us/">about us</a>
+          </div>
 
         </ul>
       </nav>
@@ -154,45 +153,57 @@
 
 <!-- END HEADER -->
 
+<!-- BREADCRUMB -->
+
+<div class="row light breadcrumb">
+  <div class="container narrow">
+      <div class="breadcrumb-text">
+        <p>clothing<span class="breadcrumb-line">|</span>sweatshirts<span class="breadcrumb-line">|</span>white longsleeve thingy<span class="breadcrumb-line"></span></p>
+      </div>
+  </div>
+</div>
+
+
+<!-- END BREADCRUMB -->
+
+<!-- PRODUCT TOP -->
+
+<div class="row product-intro">
+  <div class="container narrow flex vertical-middle space">
+      <div class="six columns" style="order: 0;">
+        <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg" />
+      </div>
+      <div class="six columns" style="order: 1;">
+        <h1>White T-Shirt.</h1>
+        <h2>A.P.C.  £75</h2>
+        <p>This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy.</p>
+        <p>This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy.</p>
+        <span><a href="/contact/" class="button fill-button buy-now">buy now</a><p class="buy-now-at">@</p><img class="buy-now-img" src="http://sneakerworld.dk/wp-content/uploads/2014/10/endclothing-logo.png"></span>
+      </div>
+  </div>
+  <div class="container narrow flex vertical-middle space">
+      <div class="six columns bottom second">
+        <h2>Why we love it.</h2>
+        <p>This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy.</p>
+        <p>This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy.</p>
+        <span><a href="/contact/" class="button fill-button buy-now">buy now</a><p class="buy-now-at">@</p><img class="buy-now-img" src="http://sneakerworld.dk/wp-content/uploads/2014/10/endclothing-logo.png"></span>
+      </div>
+      <div class="six columns top first">
+        <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_m1.jpg" />
+      </div>
+  </div>
+</div>
+
+<!-- END PRODUCT TOP -->
+
 <!-- PRODUCT GRID LAYOUT -->
 
-<div class="row" style="margin-top: 4em; padding-bottom: 0em;">
+<div class="row grid featured-products">
   <div class="container narrow">
+    <div class="twelve columns center">
+      <h2>Here's some more t-shirts:</h2>
+    </div>
     <div class="product-grid">
-      <div class="item-container">
-        <div class="item-content"></div>
-      </div>
-      <div class="item-container">
-        <div class="item-content"></div>
-      </div>
-      <div class="item-container">
-        <div class="item-content"></div>
-      </div>
-      <div class="item-container">
-        <div class="item-content"></div>
-      </div>
-      <div class="item-container">
-        <div class="item-content"></div>
-      </div>
-      <div class="item-container">
-        <div class="item-content"></div>
-      </div>
-      <a href="product.html" class="item-container">
-        <div class="item-content">
-          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
-        </div>
-      </a>
-      <div class="item-container">
-        <div class="item-content"></div>
-      </div>
-      <div class="item-container">
-        <div class="item-content"></div>
-      </div>
-      <a href="#" class="item-container">
-        <div class="item-content">
-          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
-        </div>
-      </a>
       <a href="#" class="item-container">
         <div class="item-content">
           <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
@@ -224,15 +235,61 @@
 
 <!-- END PRODUCT GRID LAYOUT -->
 
-<!-- CENTER TEXT -->
+<!-- PRODUCT TOP -->
 
-<div class="row">
-  <div class="container narrow center">
-    <h2>De-Cluttering the Internet.</h2>
+<div class="row product-intro">
+  <div class="container narrow flex vertical-middle space">
+      <div class="six columns" style="order: 0;">
+        <img src="https://assets.yellowtrace.com.au/wp-content/uploads/2015/09/Study-of-Fashion-House-Logos-APC-Fabric-Bags-Yellowtrace-03.jpg" />
+      </div>
+      <div class="six columns" style="order: 1;">
+        <h1>Why we love A.P.C.</h1>
+        <p>This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy.</p>
+        <p style="margin-bottom: 0em;">This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy. This is loads of copy.</p>
+      </div>
   </div>
 </div>
 
-<!-- END CENTER TEXT -->
+<!-- END PRODUCT TOP -->
+
+<!-- PRODUCT GRID LAYOUT -->
+
+<div class="row grid featured-products">
+  <div class="container narrow space">
+    <div class="twelve columns center">
+      <h2>Here's some more from A.P.C.:</h2>
+    </div>
+    <div class="product-grid">
+      <a href="#" class="item-container">
+        <div class="item-content">
+          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
+        </div>
+      </a>
+      <a href="#" class="item-container">
+        <div class="item-content">
+          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
+        </div>
+      </a>
+      <a href="#" class="item-container">
+        <div class="item-content">
+          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
+        </div>
+      </a>
+      <a href="#" class="item-container">
+        <div class="item-content">
+          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
+        </div>
+      </a>
+      <a href="#" class="item-container">
+        <div class="item-content">
+          <img src="https://media.endclothing.com/media/f_auto,q_auto,w_760,h_760/prodmedia/media/catalog/product/0/2/02-01-2018_apc_kraftlogotee_white_red_cocki-h26628-gaa_mo_1.jpg">
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- END PRODUCT GRID LAYOUT -->
 
 <!-- FOOTER -->
 
@@ -290,6 +347,7 @@
 </div>
 
 <!-- END FOOTER -->
+
 
 </body>
 </html>
