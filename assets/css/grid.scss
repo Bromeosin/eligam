@@ -664,9 +664,12 @@ $tablet: 800px;
 }
 
 .featured-products {
+  padding-top: 0em;
+  padding-bottom: 4em;
   h2 {
     margin-bottom: 2em;
   }
+
 }
 
 @media (max-width: 700px) {
@@ -682,6 +685,7 @@ $tablet: 800px;
   }
 
   .featured-products {
+    padding-bottom: calc(2em - 2%);
     .product-grid {
       .item-container:nth-child(3) {
         display: none;
