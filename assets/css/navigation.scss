@@ -122,6 +122,10 @@
   .nav {
     height: 3em;
   }
+  .home {
+    margin-top: 0em;
+    padding-bottom: 0em;
+  }
 }
 
 @media (min-width: 980px) {
@@ -316,7 +320,7 @@ $button-width: 35px;
 
 .dropbtn {
   opacity: 1;
-  font-weight: 100;
+  font-weight: lighter;
   padding-left: 20px;
   width: calc(100% - 40px);
   padding-right: 20px;

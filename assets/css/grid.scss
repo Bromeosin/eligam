@@ -262,6 +262,11 @@ $tablet: 800px;
   padding-bottom: calc(2em - 2%);
 }
 
+.home {
+  margin-top: 4em;
+  padding-bottom: 0em;
+}
+
 
 @media (max-width: 550px) {
   .product-grid {
@@ -523,6 +528,9 @@ $tablet: 800px;
   p {
     margin-bottom: 0rem;
   }
+  a {
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 550px) {
@@ -536,7 +544,7 @@ $tablet: 800px;
     }
     .breadcrumb-text {
       margin-bottom: 0rem;
-    }
+          }
 
   }
 }
@@ -665,6 +673,36 @@ $tablet: 800px;
   .flex {
     flex-direction: column;
   }
+  .mail {
+    order: -1;
+    margin-bottom: 2em;
+  }
+  .footer {
+    padding-top: 2em;
+  }
+
+  .featured-products {
+    .product-grid {
+      .item-container:nth-child(3) {
+        display: none;
+      }
+      .item-container:nth-child(4) {
+        display: none;
+      }
+      .item-container:nth-child(5) {
+        display: none;
+      }
+    }
+  }
+
+  form {
+    margin-bottom: 0rem;
+  }
+
+  .product-intro {
+    padding-top: 2em;
+  }
+
   .six.columns {
     width: 100%;
     margin-left: 0%;
@@ -694,4 +732,29 @@ $tablet: 800px;
       }
     }
   }
+}
+
+/* MC STUFF */
+
+#mc_embed_signup .clear {
+  width: 100%!important;
+}
+
+#mc-embedded-subscribe {
+    border-radius: 0px!important;
+    width: 100%!important;
+    background-color: black!important;
+    font-family: 'Circular Std Book'!important;
+    margin-top: 1em!important;
+    font-weight: 100!important;
+}
+
+#mce-EMAIL {
+    border-radius: 0px!important;
+    width: 100%!important;
+    font-family: 'Circular Std Book'!important;
+}
+
+#mc_embed_signup {
+    background: none!important;
 }
